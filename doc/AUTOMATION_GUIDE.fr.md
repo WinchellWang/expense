@@ -89,13 +89,13 @@ Votre automatisation finale se présente ainsi :
 ```text
 ┌──────────────────────────────────────────────────────────┐
 │  Quand une carte est touchée                             │
-│  Catégorie : Food & Drinks  |  Commerçants : Tous         │
+│  Catégorie : Food & Drinks  |  Commerçants : Tous        │
 │  Exécution : Immédiate      |  Notification : Non        │
 └────────────────────────────┬─────────────────────────────┘
                              │
                              ▼
 ┌──────────────────────────────────────────────────────────┐
-│  #  Obtenir les nombres de [Montant]                      │
+│  #  Obtenir les nombres de [Montant]                     │
 └────────────────────────────┬─────────────────────────────┘
                              │ (Variable : # Nombres)
                              ▼
@@ -110,7 +110,7 @@ Votre automatisation finale se présente ainsi :
                              ▼
 ┌──────────────────────────────────────────────────────────┐
 │  ⏹  Arrêter ce raccourci                                 │
-└────────────────────────────┘
+└──────────────────────────────────────────────────────────┘
 ```
 
 ---

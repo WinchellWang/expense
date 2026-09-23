@@ -95,7 +95,7 @@ Tu automatización finalizada tendrá la siguiente estructura:
                              │
                              ▼
 ┌──────────────────────────────────────────────────────────┐
-│  #  Obtener números de [Importe]                          │
+│  #  Obtener números de [Importe]                         │
 └────────────────────────────┬─────────────────────────────┘
                              │ (Salida: # Números)
                              ▼
@@ -109,8 +109,8 @@ Tu automatización finalizada tendrá la siguiente estructura:
                              │
                              ▼
 ┌──────────────────────────────────────────────────────────┐
-│  ⏹  Detener este atajo                                    │
-└────────────────────────────┘
+│  ⏹  Detener este atajo                                   │
+└──────────────────────────────────────────────────────────┘
 ```
 
 ---

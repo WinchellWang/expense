@@ -20,7 +20,7 @@ Grâce aux automatisations personnelles d'iOS, vous pouvez enregistrer automatiq
 
 ## 🛠️ Prérequis
 
-- Un **iPhone** sous iOS 17.0 ou version ultérieure (iOS 17.6+ / iOS 18+ recommandé).
+- Un **iPhone** sous iOS 18.0 ou version ultérieure (iOS 27+ recommandé).
 - **Apple Pay** configuré avec au moins une carte dans l'application Cartes (Wallet).
 - L'application **Expense** installée sur votre iPhone.
 - L'application native **Raccourcis**.
@@ -109,7 +109,7 @@ Votre automatisation finale se présente ainsi :
                              │
                              ▼
 ┌──────────────────────────────────────────────────────────┐
-│  ⏹  Arrêter ce raccourci                                 │
+│  ⏹  Arrêter ce raccourci                                │
 └──────────────────────────────────────────────────────────┘
 ```
 

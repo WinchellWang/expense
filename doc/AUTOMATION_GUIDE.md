@@ -20,7 +20,7 @@ With iOS Shortcuts Personal Automations, you can automatically log purchases int
 
 ## 🛠️ Prerequisites
 
-- **iPhone** running iOS 17.0 or later (iOS 17.6+ / iOS 18+ recommended).
+- **iPhone** running iOS 18.0 or later (iOS 27+ recommended).
 - **Apple Pay** configured with at least one card in Apple Wallet.
 - **Expense** app installed on your iPhone.
 - Apple's built-in **Shortcuts** app.
@@ -110,7 +110,7 @@ Your completed automation will look like this:
                              │
                              ▼
 ┌──────────────────────────────────────────────────────────┐
-│  ⏹  Stop this shortcut                                   │
+│  ⏹  Stop this shortcut                                  │
 └──────────────────────────────────────────────────────────┘
 ```
 

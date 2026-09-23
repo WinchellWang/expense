@@ -20,7 +20,7 @@ Con las automatizaciones personales de Atajos de iOS, puedes registrar compras a
 
 ## 🛠️ Requisitos previos
 
-- Un **iPhone** con iOS 17.0 o posterior (se recomienda iOS 17.6+ / iOS 18+).
+- Un **iPhone** con iOS 18.0 o posterior (se recomienda iOS 27+).
 - **Apple Pay** configurado con al menos una tarjeta en la app Cartera (Wallet).
 - La aplicación **Expense** instalada en tu iPhone.
 - La aplicación nativa **Atajos** de Apple.
@@ -109,7 +109,7 @@ Tu automatización finalizada tendrá la siguiente estructura:
                              │
                              ▼
 ┌──────────────────────────────────────────────────────────┐
-│  ⏹  Detener este atajo                                   │
+│  ⏹  Detener este atajo                                  │
 └──────────────────────────────────────────────────────────┘
 ```
 

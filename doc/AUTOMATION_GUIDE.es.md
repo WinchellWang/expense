@@ -86,32 +86,7 @@ Apple Pay suele entregar los importes acompañados del símbolo de moneda (por e
 
 Tu automatización finalizada tendrá la siguiente estructura:
 
-```text
-┌──────────────────────────────────────────────────────────┐
-│  Al tocar cualquier tarjeta                              │
-│  Categoría: Food & Drinks   |  Comercios: Todos          │
-│  Automatización: Inmediata  |  Notificar: Desactivado    │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  #  Obtener números de [Importe]                         │
-└────────────────────────────┬─────────────────────────────┘
-                             │ (Salida: # Números)
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  📈 Add Expense (Añadir gasto)                           │
-│     Importe:   # Números                                 │
-│     Categoría: 🍱 Food & Drinks                          │
-│     Nota:      Pay Comercio                             │
-│     Mostrar al ejecutar: Desactivado                     │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  ⏹  Detener este atajo                                  │
-└──────────────────────────────────────────────────────────┘
-```
+![shortcuts](./shortcuts.jpg)
 
 ---
 

@@ -86,32 +86,7 @@ Apple Pay transmet les montants avec des symboles monétaires (ex. `15,50 €`, 
 
 Votre automatisation finale se présente ainsi :
 
-```text
-┌──────────────────────────────────────────────────────────┐
-│  Quand une carte est touchée                             │
-│  Catégorie : Food & Drinks  |  Commerçants : Tous        │
-│  Exécution : Immédiate      |  Notification : Non        │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  #  Obtenir les nombres de [Montant]                     │
-└────────────────────────────┬─────────────────────────────┘
-                             │ (Variable : # Nombres)
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  📈 Add Expense (Ajouter une dépense)                    │
-│     Montant :   # Nombres                                │
-│     Catégorie : 🍱 Food & Drinks                         │
-│     Note :      Pay Commerçant                          │
-│     Afficher lors de l'exécution : Désactivé             │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  ⏹  Arrêter ce raccourci                                │
-└──────────────────────────────────────────────────────────┘
-```
+![shortcuts](./shortcuts.jpg)
 
 ---
 

@@ -87,32 +87,7 @@ Apple Pay provides transaction amounts formatted with currency symbols (e.g., `$
 
 Your completed automation will look like this:
 
-```text
-┌──────────────────────────────────────────────────────────┐
-│  When Any Card is tapped                                 │
-│  Categories: Food & Drinks  |  Merchants: Any Merchant   │
-│  Automation: ON             |  Notify: OFF               │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  #  Get numbers from [Amount]                            │
-└────────────────────────────┬─────────────────────────────┘
-                             │ (output: # Numbers)
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  📈 Add Expense                                          │
-│     Amount:   # Numbers                                  │
-│     Category: 🍱 Food & Drinks                           │
-│     Note:     Pay Merchant                              │
-│     Show When Run: OFF                                   │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  ⏹  Stop this shortcut                                  │
-└──────────────────────────────────────────────────────────┘
-```
+![shortcuts](./shortcuts.jpg)
 
 ---
 

@@ -95,22 +95,15 @@ Your completed automation will look like this:
 
 To categorize all your spending automatically, repeat the steps above to create dedicated automations for each of your common spending categories:
 
-| Automation Trigger Category | Expense App Category | Example Purchases |
-| :--- | :--- | :--- |
-| **Food & Drinks** | `🍱 Food & Drinks` | Restaurants, cafes, supermarkets, delivery |
-| **Shopping** | `🛍️ Shopping` | Retail, clothing, department stores, electronics |
-| **Transportation** | `🚗 Transportation` | Gas stations, metro, subway, taxi, parking |
-| **Travel** | `🏖️ Travel` | Airlines, hotels, train tickets |
-| **Services** | `🛠️ Services` | Haircuts, repairs, laundry, cleaning services |
-| **Entertainment** | `🎠 Entertainment` | Movies, concerts, museums, arcade |
-| **Health** | `💊 Health` | Pharmacies, clinics, doctors, fitness |
-
-### 🌟 Catch-All Automation (Optional Fallback)
-Create one final automation with:
-- **Categories**: **Any Category**
-- **Expense Category**: `🏷️ General`
-
-> This acts as a safety net for any unclassified card taps so no transaction ever slips through unrecorded!
+| Automation Trigger Category | Expense App Category |
+| :--- | :--- |
+| **Food & Drinks** | `🍱 Food & Drinks` |
+| **Shopping** | `🛍️ Shopping` |
+| **Transportation** | `🚗 Transportation` |
+| **Travel** | `🏖️ Travel` |
+| **Services** | `🛠️ Services` |
+| **Entertainment** | `🎠 Entertainment` |
+| **Health** | `💊 Health` |
 
 ---
 

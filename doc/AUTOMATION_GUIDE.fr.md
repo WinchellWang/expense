@@ -94,22 +94,15 @@ Votre automatisation finale se présente ainsi :
 
 Répétez ces étapes pour créer une automatisation dédiée à chacune de vos dépenses fréquentes :
 
-| Catégorie du déclencheur | Catégorie Expense correspondante | Exemples de dépenses |
-| :--- | :--- | :--- |
-| **Alimentation et boissons** | `🍱 Food & Drinks` | Restaurants, boulangeries, supermarchés, livraisons |
-| **Achats** | `🛍️ Shopping` | Vêtements, magasins de détail, électronique |
-| **Transports** | `🚗 Transportation` | Carburant, métro, bus, taxi, parking |
-| **Voyages** | `🏖️ Travel` | Billets d'avion, hôtels, billets de train |
-| **Services** | `🛠️ Services` | Coiffeur, réparations, pressing |
-| **Divertissement** | `🎠 Entertainment` | Cinéma, musées, concerts |
-| **Santé** | `💊 Health` | Pharmacie, consultations médicales, fitness |
-
-### 🌟 Automatisation globale de secours
-Créez une dernière automatisation avec :
-- **Catégorie** : **Toutes les catégories**
-- **Catégorie Expense** : **`🏷️ General`**
-
-> Elle servira de filet de sécurité pour enregistrer automatiquement toutes les dépenses non catégorisées !
+| Catégorie du déclencheur | Catégorie Expense correspondante |
+| :--- | :--- |
+| **Alimentation et boissons** | `🍱 Food & Drinks` |
+| **Achats** | `🛍️ Shopping` |
+| **Transports** | `🚗 Transportation` |
+| **Voyages** | `🏖️ Travel` |
+| **Services** | `🛠️ Services` |
+| **Divertissement** | `🎠 Entertainment` |
+| **Santé** | `💊 Health` |
 
 ---
 

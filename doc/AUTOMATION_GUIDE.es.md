@@ -94,22 +94,15 @@ Tu automatización finalizada tendrá la siguiente estructura:
 
 Repite el proceso anterior para crear automatizaciones dedicadas a tus categorías de gasto más habituales:
 
-| Categoría del activador | Categoría en Expense | Ejemplos de uso |
-| :--- | :--- | :--- |
-| **Comida y bebida** | `🍱 Food & Drinks` | Restaurantes, cafeterías, supermercados, reparto |
-| **Compras** | `🛍️ Shopping` | Tiendas de ropa, centros comerciales, tecnología |
-| **Transporte** | `🚗 Transportation` | Gasolineras, metro, autobús, taxi, aparcamiento |
-| **Viajes** | `🏖️ Travel` | Billetes de avión, hoteles, trenes |
-| **Servicios** | `🛠️ Services` | Peluquería, reparaciones, tintorería |
-| **Entretenimiento** | `🎠 Entertainment` | Cines, museos, conciertos |
-| **Salud** | `💊 Health` | Farmacias, clínicas, gimnasio |
-
-### 🌟 Automatización comodín de respaldo
-Crea una última automatización con:
-- **Categorías**: **Cualquier categoría**
-- **Categoría en Expense**: **`🏷️ General`**
-
-> Servirá como red de seguridad para no perder ninguna transacción que no encaje en las categorías anteriores.
+| Categoría del activador | Categoría en Expense |
+| :--- | :--- |
+| **Comida y bebida** | `🍱 Food & Drinks` |
+| **Compras** | `🛍️ Shopping` |
+| **Transporte** | `🚗 Transportation` |
+| **Viajes** | `🏖️ Travel` |
+| **Servicios** | `🛠️ Services` |
+| **Entretenimiento** | `🎠 Entertainment` |
+| **Salud** | `💊 Health` |
 
 ---
 

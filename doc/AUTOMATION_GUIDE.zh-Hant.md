@@ -1,6 +1,6 @@
 # 💳 Apple Pay 自動記帳設定指南
 
-> 使用 iOS「捷徑」個人自動化，在每次感應付款（Apple Pay）時即時自動記帳。100% 本地運作，絕佳隱私保護，完全免手動輸入。
+> 使用 iOS「捷徑」自動記錄 Apple Pay 感應付款。可選擇固定類別對應、統一記入 General 後手動整理，或透過裝置端 AI 輔助分類。
 
 [English](AUTOMATION_GUIDE.md) | [简体中文](AUTOMATION_GUIDE.zh-Hans.md) | [繁體中文](AUTOMATION_GUIDE.zh-Hant.md) | [日本語](AUTOMATION_GUIDE.ja.md) | [Français](AUTOMATION_GUIDE.fr.md) | [Español](AUTOMATION_GUIDE.es.md)
 
@@ -12,22 +12,22 @@
 
 ### 為什麼推薦使用自動化記帳？
 - ⚡ **零阻力記帳**：感應付款後即可收起手機，記帳在背景安靜自動完成。
-- 🏷️ **智慧類別對應**：將 Apple Pay 內建的交易類別（餐飲、購物、交通等）精準對應至 Expense 的分類。
+- 🏷️ **多種類別設定**：預設類別一對一對應、統一記入 General，或由 AI 推斷消費類別。
 - 🏪 **自動帶入商家名稱**：消費店家（如星巴克、全聯、超商等）會自動記錄在備註欄中。
-- 🔒 **100% 裝置端運作與隱私保障**：完全在本機運行，不需綁定銀行帳密，無外部伺服器，你的財務隱私絕不離開裝置。
+- 🔒 **本機處理**：一般記帳透過 iPhone 上的 App Intents 完成；AI 分類請選擇 On-Device，不需綁定銀行帳密。
 
 ---
 
 ## 🛠️ 事前準備
 
-- **iPhone** 運行 iOS 18.0 或以上版本（建議更新至 iOS 27+）。
+- **iPhone** 運行 iOS 18.0 或以上版本。
 - 錢包中已加入至少一張支援 Apple Pay 的信用卡或簽帳金融卡。
 - 已於 iPhone 上安裝 **Expense** App。
 - 系統內建的 **「捷徑」** App。
 
 ---
 
-## 🚀 完整步驟教學
+## 🚀 傳統捷徑：完整設定步驟
 
 本教學以最常見的 **「餐飲 (Food & Drinks)」** 類別為例（設定其他類別步驟完全相同）：
 
@@ -90,9 +90,9 @@
 
 ---
 
-## 💡 進階技巧：多類別全自動記帳
+## 💡 進階技巧：依類別建立自動化
 
-重複上述步驟，為日常生活中的主要花費分別建立自動化：
+可為觸發器中已有的類別重複上述步驟。下表僅為對應範例，無法涵蓋所有 Apple Pay 消費：
 
 | 觸發器類別 (Trigger Category) | Expense 對應類別 |
 | :--- | :--- |
@@ -103,6 +103,94 @@
 | **服務 (Services)** | `🛠️ 服務` |
 | **娛樂 (Entertainment)** | `🎠 娛樂` |
 | **健康 (Health)** | `💊 健康` |
+
+---
+
+## ⚠️ 傳統捷徑的限制與 General 方案
+
+Apple 的「交易」自動化可以依類別篩選，但傳入捷徑的交易變數中**不包含 Category（類別）**，因此一般捷徑無法讀取 Apple Pay 的原始消費類別。這是 iOS 捷徑的設計限制，Expense 無法從 App 端解決。
+
+- **一對一類別對應**：在自動化觸發條件中預選一個類別，再於 **Add Expense** 明確指定對應的 Expense 類別。每組對應需要單獨建立自動化。部分 Apple Pay 類別不在觸發器的可選清單中，未符合所選類別的消費不會被這些自動化記錄。
+- **記錄所有類別的消費**：將觸發條件設為 **任何類別（Any Category）**、**任何卡片（Any Card）** 和 **任何特約商（Any Merchant）**，再將 **Add Expense → Category** 統一設為 **General（一般）**。如此可避免因類別篩選而漏記，包括沒有對應可選類別的感應付款。稍後進入 Expense，手動修改各筆紀錄的類別。捷徑本身仍無法識別原始類別。
+
+同一筆消費應只使用一種方案。啟用 **Any Category** 自動化時，請停用涵蓋相同消費的類別自動化，避免重複記帳。此處的「所有」指 iOS 會傳給「交易」觸發器的 Apple Pay 感應付款。
+
+---
+
+## 🤖 AI 輔助捷徑：全類別觸發與自動分類
+
+> **AI 可以補上自動分類這一環：** 用 Any Category 涵蓋所有類別，再根據特約商名稱推斷類別，不必將每筆消費固定記入 General，在保留全類別觸發的同時減少手動整理。
+
+沿用 **Any Category** 觸發方式，避免依類別過濾消費，再由 Apple Intelligence 根據特約商名稱推斷 Expense 類別。AI 並非讀取 Apple Pay 缺少的 Category 欄位。提供的流程會在 **Add Expense 之前**完成分類，每筆消費只記一次。
+
+### 使用條件
+
+- **iOS 26 或以上版本**，iPhone 必須支援並已啟用 **Apple Intelligence**，且該功能在使用的語言及地區可用。
+- 捷徑中的 **使用模型（Use Model）** 動作須選擇 **裝置端（On-Device）**。僅升級 iOS 無法讓不支援的裝置取得此功能。請參閱 [Apple Intelligence 入門指南](https://support.apple.com/en-ca/guide/iphone/iphc28624b81/ios)。
+
+---
+
+## 📥 下載 AI 輔助捷徑
+
+<a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="加入 AI 輔助捷徑" width="64" height="64">
+</a>
+
+[加入 AI 輔助捷徑](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)
+
+---
+
+## 🛠️ AI 輔助捷徑設定
+
+1. 從上方獨立的下載章節加入共享的 AI 輔助捷徑。
+2. 建立「交易」自動化，選擇 **Any Card → Any Category → Any Merchant**，開啟 **立即執行**，關閉 **執行時通知**。
+3. 在自動化中執行匯入的捷徑，並將 **交易／捷徑輸入** 傳給它，以便讀取 **金額（Amount）** 和 **特約商（Merchant）**。
+4. 確認 **Use Model** 選擇 **On-Device**，並接收特約商名稱。模型傳回類別編號，對應的 **If（如果）** 分支透過 **Add Expense** 寫入擷取後的金額、對應類別及特約商備註。逐一確認各分支是否對應你的 Expense 類別，並關閉 **執行時顯示**。
+5. 停用會記錄相同消費的其他自動化，首次付款後檢查金額、備註及類別。
+
+### 分類 Prompt 與模型設定
+
+將以下英文 prompt 複製到 **Use Model**。最後一行的 `Transaction (Merchant)` 是變數佔位說明，請替換為「捷徑輸入」中的實際 **交易 → 特約商（Merchant）** 變數，不要保留為一般文字。各語言版本共用同一份英文 prompt，確保類別編號一致。
+
+依照截圖將 **模型設為 On-Device**、**輸出（Output）設為 Number（數字）**，並**關閉 Follow Up（跟進）**。在 If 分支中，將數字類型的 **Response** 與 `1` 至 `8` 比較，其中 `8` 對應 General。
+
+```text
+You are a transaction classification assistant.
+
+Your task is to classify the given merchant/business name into exactly one of the following 8 categories:
+
+1: Food & Drinks (e.g., restaurants, cafes, bars, supermarkets, food delivery)
+
+2: Shopping (e.g., clothing, electronics, home goods, general retail)
+
+3: Transportation (e.g., public transit, gas stations, ride-hailing/Uber/Lyft, tolls, parking)
+
+4: Travel (e.g., airlines, hotels, Airbnb, car rentals, booking agencies)
+
+5: Services (e.g., utilities, phone bills, insurance, subscriptions, repairs, professional services)
+
+6: Entertainment (e.g., movies, streaming, gaming, concerts, museums, clubs)
+
+7: Health (e.g., pharmacies, doctors, dentists, gyms, wellness)
+
+8: General (other expense that is hard to classify into the above 7 categories)
+
+Rules:
+- Output ONLY the single category number (from 1 to 8).
+- Do not include any explanations, punctuation, spaces, or extra text.
+
+Here is Merchant Name: Transaction (Merchant)
+```
+
+### 流程截圖與限制
+
+截圖錄製於 **iOS 27**，已展開模型的詳細設定；上方 AI 功能的使用要求仍為 **iOS 26+** 且裝置支援相關功能。
+
+![AI 輔助捷徑流程](./iOS_27_AI_Shortcuts.jpg)
+
+AI 根據特約商名稱推斷類別，可能判斷錯誤，尤其是販售多類商品的商家。請視需要在 Expense 中檢查並修正。無法確定類別時，應以 **General** 作為備用類別。截圖採用編號分支；自行調整捷徑時，也應將空白或非預期的回應導向 General，避免因未符合分支而漏記。模型執行失敗時仍可能需要手動補登。
+
+本機處理的說明以選擇 **On-Device** 為前提；切換為 Private Cloud Compute 或 ChatGPT 後，分類處理的位置也會改變。
 
 ---
 
@@ -121,4 +209,4 @@
 **可以！** 所有透過捷徑寫入的帳目均會立即同步於 Expense 主畫面上，隨時點擊即可編輯類別、金額與備註。
 
 ### Q4：Expense 會將交易紀錄傳送至雲端嗎？
-**絕不會。** 所有操作皆透過 iOS 原生 App Intents 框架在裝置端本地沙盒執行，Expense 不設遠端伺服器，無須註冊帳號，保護個人財務隱私。
+一般捷徑透過 iOS App Intents 在本機記帳。AI 版本選擇 **On-Device** 時，分類也在裝置端處理；Private Cloud Compute 與 ChatGPT 則涉及遠端處理。Expense 中選用的 iCloud 同步與備份是獨立設定。

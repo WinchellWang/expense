@@ -184,8 +184,6 @@ Here is Merchant Name: Transaction (Merchant)
 
 ### Flux et limites
 
-La capture a été réalisée sous **iOS 27**, avec les réglages détaillés du modèle ouverts. Les conditions ci-dessus restent **iOS 26 ou ultérieur** sur un appareil compatible.
-
 ![Flux du raccourci avec IA](./iOS_27_AI_Shortcuts.jpg)
 
 L’IA estime la catégorie à partir du nom du commerçant et peut se tromper, notamment pour les magasins vendant des produits variés. Vérifiez et corrigez les enregistrements dans Expense si nécessaire. Utilisez **General** en cas d’incertitude. La capture montre des branches numérotées : si vous adaptez le raccourci, dirigez aussi les réponses vides ou inattendues vers General pour éviter qu’une réponse sans correspondance empêche l’enregistrement. Un échec d’exécution du modèle peut encore nécessiter une saisie manuelle.

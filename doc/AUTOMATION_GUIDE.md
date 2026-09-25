@@ -185,8 +185,6 @@ Here is Merchant Name: Transaction (Merchant)
 
 ### Workflow and limitations
 
-The screenshot was captured on **iOS 27**, with the model settings expanded. The AI feature requirements above remain **iOS 26+** on a supported device.
-
 ![AI-assisted shortcut workflow](./iOS_27_AI_Shortcuts.jpg)
 
 AI classification is an estimate based on the merchant name and can be wrong, especially for merchants selling different kinds of goods. Review and correct records in Expense when needed. Keep **General** as the fallback for uncertain classifications. The screenshot uses numbered branches: when adapting the shortcut, also route empty or unexpected responses to General so an unmatched response does not skip logging. Model execution failures may still require a manual entry.

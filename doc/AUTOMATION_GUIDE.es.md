@@ -184,8 +184,6 @@ Here is Merchant Name: Transaction (Merchant)
 
 ### Flujo y limitaciones
 
-La captura se realizó en **iOS 27**, con los ajustes detallados del modelo desplegados. Los requisitos anteriores siguen siendo **iOS 26 o posterior** en un dispositivo compatible.
-
 ![Flujo del atajo con IA](./iOS_27_AI_Shortcuts.jpg)
 
 La IA estima la categoría a partir del nombre del comercio y puede equivocarse, especialmente en tiendas que venden productos variados. Revisa y corrige los registros en Expense cuando sea necesario. Usa **General** si la clasificación es incierta. La captura muestra ramas numeradas: al adaptar el atajo, dirige también las respuestas vacías o inesperadas a General para que una respuesta sin coincidencia no impida el registro. Si falla la ejecución del modelo, puede ser necesario registrar el gasto manualmente.

@@ -4,7 +4,7 @@
   <a align="center" href="https://testflight.apple.com/join/Ea4FgKEF">
   <img src="../icon/light_icon.png" width="128" height="128" alt="Expense App Icon" style="border-radius: 28px;" />
   <a align="center" href="https://testflight.apple.com/join/Ea4FgKEF">
-  <img src="https://testflight.apple.com/images/testflight-iOS-400x400_1x_40.png" width="48" height="48" alt="Expense App Icon" style="border-radius: 28px;" />
+  <img src="https://testflight.apple.com/images/testflight-iOS-400x400_1x_40.png" width="48" height="48" alt="Expense App Icon" />
   </a>
 </p>
 

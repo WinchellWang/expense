@@ -133,7 +133,7 @@ Mantén el activador **Any Category** para evitar el filtrado y deja que Apple I
 ## 📥 Descargar el atajo con IA
 
 <a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
-  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Añadir el atajo con IA" width="64" height="64">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Añadir el atajo con IA" width="64" height="64" style="border-radius: 14px;">
 </a>
 
 [Añadir el atajo con IA](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)

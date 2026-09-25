@@ -133,7 +133,7 @@ Gardez le déclencheur **Any Category** pour éviter le filtrage, puis laissez A
 ## 📥 Télécharger le raccourci IA
 
 <a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
-  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Ajouter le raccourci IA" width="64" height="64">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Ajouter le raccourci IA" width="64" height="64" style="border-radius: 14px;">
 </a>
 
 [Ajouter le raccourci IA](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)

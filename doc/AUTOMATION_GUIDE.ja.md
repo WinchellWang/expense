@@ -133,7 +133,7 @@ Appleの「取引」オートメーションではカテゴリで絞り込めま
 ## 📥 AIショートカットをダウンロード
 
 <a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
-  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="AIショートカットを追加" width="64" height="64">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="AIショートカットを追加" width="64" height="64" style="border-radius: 14px;">
 </a>
 
 [AIショートカットを追加](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)

@@ -133,7 +133,7 @@ Apple 的「交易」自動化可以依類別篩選，但傳入捷徑的交易�
 ## 📥 下載 AI 輔助捷徑
 
 <a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
-  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="加入 AI 輔助捷徑" width="64" height="64">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="加入 AI 輔助捷徑" width="64" height="64" style="border-radius: 14px;">
 </a>
 
 [加入 AI 輔助捷徑](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)

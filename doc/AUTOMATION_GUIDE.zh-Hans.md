@@ -133,7 +133,7 @@ Apple Pay 传入的交易金额通常带有货币符号（如 `$9.21`、`¥15.00
 ## 📥 下载 AI 辅助快捷指令
 
 <a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
-  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="添加 AI 辅助快捷指令" width="64" height="64">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="添加 AI 辅助快捷指令" width="64" height="64" style="border-radius: 14px;">
 </a>
 
 [添加 AI 辅助快捷指令](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)

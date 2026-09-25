@@ -134,7 +134,7 @@ Use the same **Any Category** trigger to avoid category filtering, then let Appl
 ## 📥 Download the AI shortcut
 
 <a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d">
-  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Add the AI shortcut" width="64" height="64" border-radius="14">
+  <img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Add the AI shortcut" width="64" height="64" style="border-radius: 14px;">
 </a>
 
 [Add the AI shortcut](https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d)
